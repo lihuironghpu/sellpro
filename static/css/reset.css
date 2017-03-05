@@ -1,0 +1,7 @@
+/*默认样式初始化*/
+article,aside,dialog,footer,header,section,footer,nav,figure,menu{_display:block}
+body,p,h1,h2,h3,h4,h5,h6,dl,ul,dd{margin: 0}
+ul{padding: 0}
+li{list-style: none;}
+a{text-decoration: none; color: #333}
+/*a:hover{text-decoration: underline}*/
