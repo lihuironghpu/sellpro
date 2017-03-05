@@ -5,3 +5,9 @@ ul{padding: 0}
 li{list-style: none;}
 a{text-decoration: none; color: #333}
 /*a:hover{text-decoration: underline}*/
+html{
+  font-size: 0.625rem;
+}
+body{
+  font-size: 1.4rem;
+}

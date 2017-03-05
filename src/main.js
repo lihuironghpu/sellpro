@@ -3,11 +3,13 @@
 import Vue from 'vue'
 import App from './App'
 import VueRouter from 'vue-router'
+import VueResource from 'vue-resource'
 import goods from './components/goods/goods.vue'
 import ratings from './components/ratings/ratings.vue'
 
 Vue.config.productionTip = false
 Vue.use(VueRouter)
+Vue.use(VueResource)
 
 const routes = [
   {
@@ -31,4 +33,4 @@ new Vue({
   router: router
 }).$mount('#app')
 
-router.push('/goods')
+// router.push('/goods')

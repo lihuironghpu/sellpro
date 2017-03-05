@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <v-header></v-header>
+    <v-header :seller="seller"></v-header>
     <div class="tab">
       <div class="tab-goods">
         <router-link to="/goods">商品</router-link>
@@ -15,12 +15,25 @@
 </template>
 
 <script type="text/ecmascript-6">
-import vHeader from './components/header/vheader'
-export default {
-  components: {
-    vHeader: vHeader
+  import vHeader from './components/header/vheader'
+  export default {
+    data () {
+      return {
+        seller: ''
+      }
+    },
+    created () {
+      this.$http.get('./api/seller').then(response => {
+        // 成功回调
+        this.seller = response.body.data
+      }, response => {
+        // 失败回调
+      })
+    },
+    components: {
+      vHeader: vHeader
+    }
   }
-}
 </script>
 
 <style>
@@ -30,12 +43,12 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
   #app .tab{
     border-bottom: 1px solid #ddd;
     line-height: 4rem;
     display: flex;
+    font-size: 1.8rem;
   }
   #app .tab>div{
     flex: 1;
