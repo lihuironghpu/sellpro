@@ -1,7 +1,5 @@
 <template>
-  <div class="goods">
-    商品列表
-  </div>
+  <div class="goods">商品列表</div>
 </template>
 
 <script type="text/ecmascript-6">

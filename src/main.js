@@ -11,7 +11,7 @@ Vue.config.productionTip = false
 Vue.use(VueRouter)
 Vue.use(VueResource)
 
-const routes = [
+const routers = [
   {
     path: '/goods',
     components: goods
@@ -23,14 +23,14 @@ const routes = [
 ]
 
 const router = new VueRouter({
-  linkActiveClass: 'active',
-  routes
+  routers
 })
 
 new Vue({
+  el: '#app',
+  router,
   template: '<App/>',
-  components: { App },
-  router: router
+  components: { App }
 }).$mount('#app')
 
-// router.push('/goods')
+router.push('/goods')
