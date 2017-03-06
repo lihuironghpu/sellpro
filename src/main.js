@@ -6,6 +6,7 @@ import App from './App'
 import VueResource from 'vue-resource'
 import goods from './components/goods/goods.vue'
 import ratings from './components/ratings/ratings.vue'
+import seller from './components/seller/seller.vue'
 
 Vue.config.productionTip = false
 Vue.use(VueResource)
@@ -13,7 +14,8 @@ Vue.use(VueRouter)
 
 const routes = [
   { path: '/goods', component: goods },
-  { path: '/ratings', component: ratings }
+  { path: '/ratings', component: ratings },
+  { path: '/seller', component: seller }
 ]
 
 const router = new VueRouter({

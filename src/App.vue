@@ -8,6 +8,9 @@
       <div class="tab-ratings">
         <router-link to="/ratings">评价</router-link>
       </div>
+      <div class="tab-ratings">
+        <router-link to="/seller">商家</router-link>
+      </div>
     </div>
 
     <!--路由视图-->
