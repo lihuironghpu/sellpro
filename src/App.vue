@@ -8,9 +8,10 @@
       <div class="tab-ratings">
         <router-link to="/ratings">评价</router-link>
       </div>
-      <!--路由视图-->
-      <router-view></router-view>
     </div>
+
+    <!--路由视图-->
+    <router-view></router-view>
   </div>
 </template>
 

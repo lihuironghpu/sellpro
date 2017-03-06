@@ -12,8 +12,8 @@ Vue.use(VueResource)
 Vue.use(VueRouter)
 
 const routes = [
-  { path: '/goods', components: goods },
-  { path: '/ratings', components: ratings }
+  { path: '/goods', component: goods },
+  { path: '/ratings', component: ratings }
 ]
 
 const router = new VueRouter({
@@ -28,4 +28,4 @@ new Vue({
   }
 }).$mount('#app')
 
-// router.push('/goods')
+router.push('/goods')
