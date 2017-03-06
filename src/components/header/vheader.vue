@@ -31,7 +31,6 @@
     props: {
       seller: {
         type: Object
-
       }
     },
     computed: {
